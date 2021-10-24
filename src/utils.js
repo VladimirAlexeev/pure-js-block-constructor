@@ -6,15 +6,7 @@ export function col(content, styles) {
     return `<div class="col-sm" style="${styles}">${content}</div>`;
 }
 
-
 export function css(styles = {}) {
-    // const keys = Object.keys(styles);
-    // const stylesArray = keys.map(key => {
-    //     return `${key}: ${styles[key]}`
-    // })
-    //
-    // return stylesArray.join(';');
-
     if (typeof styles === 'string') return  styles;
 
     const toString = key => `${key}: ${styles[key]}`;
