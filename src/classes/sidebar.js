@@ -6,9 +6,6 @@ export class SideBar {
         this.$el = document.querySelector(selector);
         this.update = updateCallback;
 
-        // this.$el.insertAdjacentHTML('afterbegin', '<h1>TEST</h1>')
-        // this.$el.insertAdjacentHTML('afterbegin', this.template)
-
         this.init();
     }
 
@@ -18,7 +15,6 @@ export class SideBar {
     }
 
     get template() {
-        // return '<h1>Template</h1>'
         return [
             block('text'),
             block('title')
